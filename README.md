@@ -35,7 +35,7 @@ sets the state: typedInput, words and wordCount
 
 --> on: "incoming"
 
-###### `updateeWords()`
+###### `updateWords()`
 <-- words
 
 --> sets the state: words and wordCount
@@ -58,4 +58,4 @@ sets the state: typedInput, words and wordCount
 * Fork the server repo from [this Github link](https://github.com/ashley-breunich/yakker-server/tree/master/server), install all dependencies (npm install), and then launch the server by typing `nodemon` into the terminal. 
 
 #### UML
-Link to an image of the UML for your application and response to events
+[Link to UML](assets/lab-38-uml.jpg)
