@@ -1,42 +1,61 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## Lab 38 - Yakker App
 
-### Author: Student/Group Name
+### Author: Ashley Breunich
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com)
-* [front-end](http://xyz.com)
+* [repository - server](https://github.com/ashley-breunich/yakker-server/tree/master/server)
+* [codesandbox.io - client side](https://codesandbox.io/s/yj2px56v69)
+* [front-end](https://yj2px56v69.codesandbox.io/)
 
 ### Modules
-#### `modulename.js`
+#### `index.js`
 ##### Exported Values and Methods
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+###### `CLASS Main`
+--> App Component
 
-###### `bar(array) -> array`
-Usage Notes or examples
+#### `app.js`
+##### Exported Values and Methods
+
+###### `App()`
+<-- props
+
+--> React.Fragment
+
+--> TrollJohn Component
+
+#### `troll.js`
+##### Exported Values and Methods
+
+###### `CLASS TrollJohn`
+sets the state: typedInput, words and wordCount
+
+--> on: "incoming"
+
+###### `updateeWords()`
+<-- words
+
+--> sets the state: words and wordCount
+
+###### `handleSubmit()`
+<-- event
+
+--> emits: "troll" 
+
+###### `render()`
+--> form
+
+--> h2 with each new message (up to 10)
+
 
 ### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `url` - http://localhost:8080
 
-#### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
-
-#### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+#### Running the server app
+* Fork the server repo from [this Github link](https://github.com/ashley-breunich/yakker-server/tree/master/server), install all dependencies (npm install), and then launch the server by typing `nodemon` into the terminal. 
 
 #### UML
 Link to an image of the UML for your application and response to events
